@@ -7,8 +7,10 @@
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
+    {      "src": "\/static\/(.*)",
+      "dest": "/static\/$1"
+    },
+    {      "src": "/(.*)",
       "dest": "app.py"
     }
   ]
